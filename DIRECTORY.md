@@ -145,6 +145,7 @@
             - 📄 [TwoPSet](src/main/java/com/thealgorithms/datastructures/crdt/TwoPSet.java)
           - 📁 **disjointsetunion**
             - 📄 [DisjointSetUnion](src/main/java/com/thealgorithms/datastructures/disjointsetunion/DisjointSetUnion.java)
+            - 📄 [DisjointSetUnionBySize](src/main/java/com/thealgorithms/datastructures/disjointsetunion/DisjointSetUnionBySize.java)
             - 📄 [Node](src/main/java/com/thealgorithms/datastructures/disjointsetunion/Node.java)
           - 📁 **dynamicarray**
             - 📄 [DynamicArray](src/main/java/com/thealgorithms/datastructures/dynamicarray/DynamicArray.java)
@@ -346,6 +347,8 @@
           - 📄 [Point](src/main/java/com/thealgorithms/geometry/Point.java)
         - 📁 **graph**
           - 📄 [ConstrainedShortestPath](src/main/java/com/thealgorithms/graph/ConstrainedShortestPath.java)
+          - 📄 [HopcroftKarp](src/main/java/com/thealgorithms/graph/HopcroftKarp.java)
+          - 📄 [PredecessorConstrainedDfs](src/main/java/com/thealgorithms/graph/PredecessorConstrainedDfs.java)
           - 📄 [StronglyConnectedComponentOptimized](src/main/java/com/thealgorithms/graph/StronglyConnectedComponentOptimized.java)
           - 📄 [TravelingSalesman](src/main/java/com/thealgorithms/graph/TravelingSalesman.java)
         - 📁 **greedyalgorithms**
@@ -545,7 +548,6 @@
           - 📄 [LowestBasePalindrome](src/main/java/com/thealgorithms/others/LowestBasePalindrome.java)
           - 📄 [Luhn](src/main/java/com/thealgorithms/others/Luhn.java)
           - 📄 [Mandelbrot](src/main/java/com/thealgorithms/others/Mandelbrot.java)
-          - 📄 [MaximumSlidingWindow](src/main/java/com/thealgorithms/others/MaximumSlidingWindow.java)
           - 📄 [MaximumSumOfDistinctSubarraysWithLengthK](src/main/java/com/thealgorithms/others/MaximumSumOfDistinctSubarraysWithLengthK.java)
           - 📄 [MemoryManagementAlgorithms](src/main/java/com/thealgorithms/others/MemoryManagementAlgorithms.java)
           - 📄 [MiniMaxAlgorithm](src/main/java/com/thealgorithms/others/MiniMaxAlgorithm.java)
@@ -554,8 +556,6 @@
           - 📄 [PerlinNoise](src/main/java/com/thealgorithms/others/PerlinNoise.java)
           - 📄 [PrintAMatrixInSpiralOrder](src/main/java/com/thealgorithms/others/PrintAMatrixInSpiralOrder.java)
           - 📄 [QueueUsingTwoStacks](src/main/java/com/thealgorithms/others/QueueUsingTwoStacks.java)
-          - 📄 [RemoveDuplicateFromString](src/main/java/com/thealgorithms/others/RemoveDuplicateFromString.java)
-          - 📄 [ReverseStackUsingRecursion](src/main/java/com/thealgorithms/others/ReverseStackUsingRecursion.java)
           - 📄 [SkylineProblem](src/main/java/com/thealgorithms/others/SkylineProblem.java)
           - 📄 [TwoPointers](src/main/java/com/thealgorithms/others/TwoPointers.java)
           - 📄 [Verhoeff](src/main/java/com/thealgorithms/others/Verhoeff.java)
@@ -638,6 +638,7 @@
           - 📄 [LongestSubarrayWithSumLessOrEqualToK](src/main/java/com/thealgorithms/slidingwindow/LongestSubarrayWithSumLessOrEqualToK.java)
           - 📄 [LongestSubstringWithoutRepeatingCharacters](src/main/java/com/thealgorithms/slidingwindow/LongestSubstringWithoutRepeatingCharacters.java)
           - 📄 [MaxSumKSizeSubarray](src/main/java/com/thealgorithms/slidingwindow/MaxSumKSizeSubarray.java)
+          - 📄 [MaximumSlidingWindow](src/main/java/com/thealgorithms/slidingwindow/MaximumSlidingWindow.java)
           - 📄 [MinSumKSizeSubarray](src/main/java/com/thealgorithms/slidingwindow/MinSumKSizeSubarray.java)
           - 📄 [ShortestCoprimeSegment](src/main/java/com/thealgorithms/slidingwindow/ShortestCoprimeSegment.java)
         - 📁 **sorts**
@@ -736,9 +737,9 @@
           - 📄 [Pangram](src/main/java/com/thealgorithms/strings/Pangram.java)
           - 📄 [PermuteString](src/main/java/com/thealgorithms/strings/PermuteString.java)
           - 📄 [RabinKarp](src/main/java/com/thealgorithms/strings/RabinKarp.java)
+          - 📄 [RemoveDuplicateFromString](src/main/java/com/thealgorithms/strings/RemoveDuplicateFromString.java)
           - 📄 [ReturnSubsequence](src/main/java/com/thealgorithms/strings/ReturnSubsequence.java)
           - 📄 [ReverseString](src/main/java/com/thealgorithms/strings/ReverseString.java)
-          - 📄 [ReverseStringRecursive](src/main/java/com/thealgorithms/strings/ReverseStringRecursive.java)
           - 📄 [ReverseWordsInString](src/main/java/com/thealgorithms/strings/ReverseWordsInString.java)
           - 📄 [Rotation](src/main/java/com/thealgorithms/strings/Rotation.java)
           - 📄 [StringCompression](src/main/java/com/thealgorithms/strings/StringCompression.java)
@@ -884,6 +885,7 @@
             - 📄 [PNCounterTest](src/test/java/com/thealgorithms/datastructures/crdt/PNCounterTest.java)
             - 📄 [TwoPSetTest](src/test/java/com/thealgorithms/datastructures/crdt/TwoPSetTest.java)
           - 📁 **disjointsetunion**
+            - 📄 [DisjointSetUnionBySizeTest](src/test/java/com/thealgorithms/datastructures/disjointsetunion/DisjointSetUnionBySizeTest.java)
             - 📄 [DisjointSetUnionTest](src/test/java/com/thealgorithms/datastructures/disjointsetunion/DisjointSetUnionTest.java)
           - 📁 **dynamicarray**
             - 📄 [DynamicArrayTest](src/test/java/com/thealgorithms/datastructures/dynamicarray/DynamicArrayTest.java)
@@ -1051,6 +1053,8 @@
           - 📄 [PointTest](src/test/java/com/thealgorithms/geometry/PointTest.java)
         - 📁 **graph**
           - 📄 [ConstrainedShortestPathTest](src/test/java/com/thealgorithms/graph/ConstrainedShortestPathTest.java)
+          - 📄 [HopcroftKarpTest](src/test/java/com/thealgorithms/graph/HopcroftKarpTest.java)
+          - 📄 [PredecessorConstrainedDfsTest](src/test/java/com/thealgorithms/graph/PredecessorConstrainedDfsTest.java)
           - 📄 [StronglyConnectedComponentOptimizedTest](src/test/java/com/thealgorithms/graph/StronglyConnectedComponentOptimizedTest.java)
           - 📄 [TravelingSalesmanTest](src/test/java/com/thealgorithms/graph/TravelingSalesmanTest.java)
         - 📁 **greedyalgorithms**
@@ -1218,14 +1222,11 @@
           - 📄 [LineSweepTest](src/test/java/com/thealgorithms/others/LineSweepTest.java)
           - 📄 [LinkListSortTest](src/test/java/com/thealgorithms/others/LinkListSortTest.java)
           - 📄 [LowestBasePalindromeTest](src/test/java/com/thealgorithms/others/LowestBasePalindromeTest.java)
-          - 📄 [MaximumSlidingWindowTest](src/test/java/com/thealgorithms/others/MaximumSlidingWindowTest.java)
           - 📄 [MaximumSumOfDistinctSubarraysWithLengthKTest](src/test/java/com/thealgorithms/others/MaximumSumOfDistinctSubarraysWithLengthKTest.java)
           - 📄 [NewManShanksPrimeTest](src/test/java/com/thealgorithms/others/NewManShanksPrimeTest.java)
           - 📄 [NextFitTest](src/test/java/com/thealgorithms/others/NextFitTest.java)
           - 📄 [PasswordGenTest](src/test/java/com/thealgorithms/others/PasswordGenTest.java)
           - 📄 [QueueUsingTwoStacksTest](src/test/java/com/thealgorithms/others/QueueUsingTwoStacksTest.java)
-          - 📄 [RemoveDuplicateFromStringTest](src/test/java/com/thealgorithms/others/RemoveDuplicateFromStringTest.java)
-          - 📄 [ReverseStackUsingRecursionTest](src/test/java/com/thealgorithms/others/ReverseStackUsingRecursionTest.java)
           - 📄 [SkylineProblemTest](src/test/java/com/thealgorithms/others/SkylineProblemTest.java)
           - 📄 [TestPrintMatrixInSpiralOrder](src/test/java/com/thealgorithms/others/TestPrintMatrixInSpiralOrder.java)
           - 📄 [TwoPointersTest](src/test/java/com/thealgorithms/others/TwoPointersTest.java)
@@ -1310,6 +1311,7 @@
           - 📄 [LongestSubarrayWithSumLessOrEqualToKTest](src/test/java/com/thealgorithms/slidingwindow/LongestSubarrayWithSumLessOrEqualToKTest.java)
           - 📄 [LongestSubstringWithoutRepeatingCharactersTest](src/test/java/com/thealgorithms/slidingwindow/LongestSubstringWithoutRepeatingCharactersTest.java)
           - 📄 [MaxSumKSizeSubarrayTest](src/test/java/com/thealgorithms/slidingwindow/MaxSumKSizeSubarrayTest.java)
+          - 📄 [MaximumSlidingWindowTest](src/test/java/com/thealgorithms/slidingwindow/MaximumSlidingWindowTest.java)
           - 📄 [MinSumKSizeSubarrayTest](src/test/java/com/thealgorithms/slidingwindow/MinSumKSizeSubarrayTest.java)
           - 📄 [ShortestCoprimeSegmentTest](src/test/java/com/thealgorithms/slidingwindow/ShortestCoprimeSegmentTest.java)
         - 📁 **sorts**
@@ -1404,8 +1406,8 @@
           - 📄 [PalindromeTest](src/test/java/com/thealgorithms/strings/PalindromeTest.java)
           - 📄 [PangramTest](src/test/java/com/thealgorithms/strings/PangramTest.java)
           - 📄 [PermuteStringTest](src/test/java/com/thealgorithms/strings/PermuteStringTest.java)
+          - 📄 [RemoveDuplicateFromStringTest](src/test/java/com/thealgorithms/strings/RemoveDuplicateFromStringTest.java)
           - 📄 [ReturnSubsequenceTest](src/test/java/com/thealgorithms/strings/ReturnSubsequenceTest.java)
-          - 📄 [ReverseStringRecursiveTest](src/test/java/com/thealgorithms/strings/ReverseStringRecursiveTest.java)
           - 📄 [ReverseStringTest](src/test/java/com/thealgorithms/strings/ReverseStringTest.java)
           - 📄 [ReverseWordsInStringTest](src/test/java/com/thealgorithms/strings/ReverseWordsInStringTest.java)
           - 📄 [RotationTest](src/test/java/com/thealgorithms/strings/RotationTest.java)
